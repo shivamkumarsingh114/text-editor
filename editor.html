@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WYSIWYG text editor</title>
+		<script src="https://use.fontawesome.com/aac5c45839.js"></script>
+		<script type="text/javascript" src="wysiwyg.js"></script>
+	</head>
+	<body onload="iFrameOn();">
+		<div id= "div">
+			<button onclick="iBold()"><i class="fa fa-bold"></i></button>
+			<button onclick="iItalic()"><i class="fa fa-italic"></i></button>
+			<button onclick="iUnderline()"><i class="fa fa-underline"></i></button>
+			<button onclick="iUnorderedList()"><i class="fa fa-list-ul"></i></button>
+			<button onclick="iOrderedList()"><i class="fa fa-list-ol"></i></button>
+			<button onclick="iLink()"><i class="fa fa-link"></i></button>
+			<button onclick="iUnLink()"><i class="fa fa-unlink"></i></button>
+			<select id="fontN" onchange="iFontType()">
+				<option value="Arial">Arial</option>
+				<option value="Comic Sans MS">Comic Sans MS</option>
+				<option value="Courier">Courier</option>
+				<option value="Georgia">Georgia</option>
+				<option value="Tahoma">Tahoma</option>
+				<option value="Times New Roman">Times New Roman</option>
+				<option value="Verdana">Verdana</option>
+			</select>
+			<select id="fontS" onchange="iFontSize()">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+			</select>
+			<button onclick ="iForeColor()">Colour</button>			
+			<button onclick="iHilitColor()">Highlight</button>
+			<button onclick="iImage()"><i class="fa fa-file-image-o"></i></button>
+		<iframe name="richTextField" id="richTextField" style="width: 1000px; height: 500px;"></iframe><br>
+		<button onclick="SubmitSource();"><i class="fa fa-code"></i></button></div>
+	</body>
+</html>
